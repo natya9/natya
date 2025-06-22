@@ -2,20 +2,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+  scrollbar-color: rgb(255, 94, 120) rgb(255, 234, 252);
 
+}
 a {
     color: rgb(75, 0, 12)
 }
-
 body {
   position: relative;
   margin: 0;
   padding: 0;
-  border: 4px rgb(255, 180, 203);
-    border-style: dashed;
+  
 }
-
 body::before {
   content: "";
   position: fixed;
@@ -27,15 +25,66 @@ body::before {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  opacity: 0.7; 
+  opacity: 0.4; 
   z-index: -1;
+  border: 5px dashed rgb(255, 94, 120);
+}
+
+.logo {
+  position: absolute;
+  top: -72px;
+  left: -60px;
+  width: 150px; 
+  height: auto;  
+  z-index: 3;    
+}
+.logo3 {
+  position: absolute;
+  top: -140px;
+  right: -70px;
+  width: 250px; 
+  height: auto;
+  z-index: 4;   
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100%;
+    background-color: rgb(121, 97, 111);
+    width: 70%;
+    height: 900px;
+    margin: 150px auto;
+    border-radius: 9px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    color: rgb(75, 0, 12);
+    font-size: 16px;
+    line-height: 1.6;
+    outline: 3px dashed rgb(120, 129, 255);
+    outline-offset: 1px; 
+    border-image: url('/assets/bor3.png') 70 round;
+    border-width: 65px;
+    border-style: solid;
+    border-image-outset: 57px;
+    overflow: visible;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.01);
+}
+
+.nav {
+  width: 20%;
+  position: absolute;
+  top: -65px;
+  bottom: -65px;
+  left: -65px;
+  background-color: rgba(173, 216, 255, 0.6);
+  border-image: url(https://angelovin.neocities.org/img/lace.png) 30 round; 
+  border-width: 25px;
+  border-style: solid;
+  border-image-outset: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 2;
 }
