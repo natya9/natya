@@ -2,18 +2,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scrollbar-color: rgb(255, 94, 120) rgb(255, 234, 252);
+  scrollbar-color: rgb(177, 207, 203) rgb(255, 234, 252);
 
 }
+
 a {
     color: rgb(75, 0, 12)
 }
+
 body {
   position: relative;
   margin: 0;
   padding: 0;
-  
+  cursor: url('../assets/redo.png') 0 0, auto;
 }
+ 
 body::before {
   content: "";
   position: fixed;
@@ -28,6 +31,16 @@ body::before {
   opacity: 0.4; 
   z-index: -1;
   border: 5px dashed rgb(255, 94, 120);
+}
+
+::selection {
+  background: hsl(209, 100%, 92%);
+  color: #330000;
+}
+
+::-moz-selection {
+  background: hsl(335, 97%, 86%);
+  color: #330000;
 }
 
 .logo {
