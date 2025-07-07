@@ -207,16 +207,6 @@ body::before {
   transform: scale(1.07) rotate(-1.5deg);
 }
 
-.pixelroses {
-   position: absolute;
-  top: 330px;
-  right: 1vw;
-  width: 180px; 
-  height: auto;
-  z-index: 5;   
-  filter: drop-shadow(0 0 10px rgb(248, 247, 255));
-}
-
 .waterbg {
   position: absolute;
   top: -65px;
@@ -224,4 +214,19 @@ body::before {
   width: 60vw;
   height: 900px;
   background: linear-gradient(to bottom, rgba(221, 233, 255, 0.35), rgba(255, 248, 252, 0), rgba(193, 180, 189, 0.416));
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.pretty {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.001), rgba(91, 66, 78, 0.276), rgba(63, 20, 49, 0.416));
+  z-index: 1;
+  position: absolute;
+  top: -8.5%;
+  right: -0.9%;
+  width: 40%;
+  height: 20%;
+  border-right: 3px dashed rgb(228, 230, 255);
+  border-bottom: 3px dashed rgb(228, 230, 255);
+  border-left: none;
 }
